@@ -1,0 +1,30 @@
+{
+  "name": "suivi-recommandations-pedagogique",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:api": "node --test tests/api.test.mjs",
+    "test:csharp": "node scripts/check-csharp.mjs",
+    "test:integration": "playwright test --config playwright.api.config.ts",
+    "serve": "node scripts/serve-preview.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "~5.9.2",
+    "vite": "^6.4.1",
+    "vitest": "^4.1.11"
+  }
+}

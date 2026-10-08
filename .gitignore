@@ -1,0 +1,14 @@
+node_modules/
+dist/
+bin/
+obj/
+.tools/
+.artifacts/
+.env
+.env.local
+*.user
+playwright-report/
+test-results/
+
+# Local verification evidence is never published.
+docs/verification/
